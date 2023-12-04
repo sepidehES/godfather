@@ -1,0 +1,657 @@
+/* variables
+*******************/
+:root {
+  --film-black: #272727;
+  --film-green: #1D4851;
+  --film-grey: #e0e0e0;
+  --film-light-grey: #f0f0f0;
+  --film-gold: #c9af69;
+  --film-red: #c41921;
+  --film-grayblack: rgb(56, 53, 53);
+}
+
+
+
+/* config generale
+*******************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: inherit;  
+}
+
+p {
+  text-align: justify;
+}
+
+#SE_formulaire textarea {
+  resize: none;
+}
+
+/* header
+*******************/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh; /*pourcentage de la hauteur de la fenêntre*/
+  min-height: 14em; /*pour fixer le menu (responsive)*/
+  background-image: url('/devoirs/film/img/godfather_headerG.png');
+  background-size: contain; /*afficher l'image à sa taille d'origine*/
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: black;
+  color: white;
+}
+
+#SE_header_logo {
+  padding: 0.5em;
+}
+
+/* header/menu
+*******************/
+
+/* ce menuest seulement affiché pour les GSM 
+*******************/
+/*==========*/
+#SE_menu_gsm {
+  display: none;
+}
+
+#SE_menu {
+  align-self: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: white;
+}
+
+#SE_menu_list {
+  display: flex;
+}
+
+.SE_menu_button {
+  position: relative;/* reference pour absolute de class SE_menu_sub*/
+  margin: 1em 0.5em 0 0.5em;
+  border-radius: 5px 5px 0 0;
+}
+
+.SE_menu_sub_button {
+  border: 0.1em solid var(--film-grey);
+  border-radius: 0 0 5px 5px;
+}
+
+.SE_menu_button,
+.SE_menu_sub_button {
+  padding: 1em;
+  background-color: black;
+  cursor: pointer;
+}
+
+.SE_menu_button:hover,
+.SE_menu_sub_button:hover {
+  background-color: var(--film-gold);
+}
+
+/* on veut changer que les enfants direct */
+.SE_menu_button:hover > a,
+.SE_menu_sub_button:hover > a {
+  color: black;
+}
+
+.SE_menu_button:hover .SE_menu_sub {
+  display: block;
+}
+
+.SE_menu_sub {
+  position: absolute; /*retirer le block du flux*/
+  top: 3.4em;
+  left: 0; /*corriger décalage submenu*/
+  display: none;/*caché*/
+  width: 12em;
+  border-radius: 20%;
+}
+
+/* main
+*******************/
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  background-color: var(--film-grey);}
+
+#SE_main_center {
+  width: 70%;
+  background-color: white;
+  padding-bottom: 2em;
+}
+
+.SE_section_title {
+  padding: 1em;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.SE_section_padding {
+  padding: 0 12em;
+  margin-top: 2em;
+}
+
+.SE_main_casting {
+  display: flex;
+  flex-direction: column;
+}
+
+.SE_main_casting a {
+  display: block;
+}
+
+.SE_main_casting_photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.SE_photo_center {
+  justify-content: center !important;
+}
+
+.SE_photo_center li {
+  margin: 0 1em;
+}
+
+.SE_main_casting_photo li {
+  flex: 0 0 20%;
+  margin: 2%;
+  text-align: center;
+  max-width: 125px;
+  font-size: 0.8em;
+}
+
+.SE_main_casting_photo img {
+  border-radius: 10px;
+  width: 125px;
+  height: 166px;
+}
+
+.SE_main_casting_photo li p {
+  text-align: center;
+}
+
+.SE_main_title {
+  font-size: 2em;
+  padding-left: 1em;
+
+}
+
+/* main/index.html
+*******************/
+/*================*/
+#SE_index_image {
+  margin-left: -11em;
+  margin-top: -9em;
+}
+
+#SE_index_image img {
+  width: 350px;
+
+}
+#SE_index_resume {
+  display: flex;
+}
+
+#SE_resume_content {
+  margin-top: 2em;
+}
+
+#SE_resume_content a {
+  color: var(--film-red);
+  font-weight: bolder;
+}
+
+#SE_resume_content ul {
+  margin: 1.5em 0;
+}
+
+#SE_index_button {
+  align-self: center;
+  margin: 2em 0;
+  padding: 1em;
+  border: 0.1em solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#SE_index_button a {
+  color: var(--film-red);
+}
+
+#SE_index_button:hover a {
+  font-weight: bolder;
+}
+
+.SE_media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#SE_trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#SE_gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+#SE_gallery img {
+  width: 140px;
+  height: 100%;
+}
+
+#SE_gallery_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SE_gallery_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SE_gallery_row li {
+  padding: 0.2em;
+}
+
+#SE_tops {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.SE_tops_column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.SE_tops_image img {
+  width: 300px;
+  height: 150px;
+}
+
+.SE_tops_column span {
+  color: red;
+}
+
+/* gallery
+*******************/
+
+.SE_mediagallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.SE_gallerypage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.SE_gallerypage img {
+  width: 160px;
+  height: 100px;
+}
+
+.SE_gallerypage_image {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.SE_gallerypage_image li {
+  flex: 0 0 23%;
+  margin: 1%;
+}
+
+.SE_gallerypage_poster img{
+  width: 120px;
+  height: 160px;
+}
+
+/* actors
+*******************/
+/*******************/
+#SE_actor_title {
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+}
+
+#SE_actor_status {
+  display: flex;
+  align-items: center;
+}
+
+.SE_actor_image img {
+  border-radius: 5px ;
+}
+
+.SE_actor_detail {
+  padding-left: 2em;
+}
+
+.SE_actor_detail span {
+  color: red;
+}
+
+.SE_actor_detail li {
+  font-weight: bold;
+}
+
+.SE_actor_bio p {
+  margin-bottom: 1em;
+}
+
+/* Contact
+*******************/
+#SE_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#SE_formulaire {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px whitesmoke;
+  padding: 1em;
+  margin-left: 5em;
+  box-shadow: -2px -2px 8px 2px var(--film-grey);
+  border-radius: 5px;
+  flex: 1.5;
+}
+
+#SE_formulaire input,
+#SE_formulaire textarea {
+  resize: none;
+  margin-bottom: 2em;
+  padding: 0.6em;
+}
+
+#SE_formulaire textarea {
+  height: 10em;
+}
+
+.SE_section_padding h1 {
+  margin-bottom: 1em;
+}
+
+.SE_formulaire_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SE_formulaire_button {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.SE_formulaire_button:hover {
+  background-color: var(--film-gold);
+  color: black;
+}
+
+#SE_contact_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  width: 30em; 
+  height: 35em; 
+  flex: 1;
+}
+
+.SE_contact_information_row {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+
+.SE_contact_logo {
+  background-color: var(--film-gold);
+  padding: 0.7em;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+
+.SE_contact_logo img {
+  width: 20px;
+}
+
+/* footer
+*******************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+
+#SE_footer_contact {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#SE_search_box {
+ display: flex;
+ border-radius: 5px;
+}
+
+#SE_search_box input {
+  padding: 0.5em;
+}
+
+.SE_footer_button:hover {
+  background-color: var(--film-gold);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.SE_social-logo {
+  width: 2em;
+  height: 2em;
+}
+
+/* config Responsive pour les GSM
+*******************/
+@media only screen and (max-width: 1200px) {
+
+  #SE_header_logo img {
+    width: 8em;
+  }
+
+  #SE_index_image {
+    display: none;
+  }
+
+  .SE_section_padding {
+    padding: 0.8em;
+  }
+
+  #SE_gallery {
+    width: 100%;
+  }
+  
+  #SE_tops {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .SE_tops_column {
+    padding-bottom: 0.5em; 
+  }
+  
+  #SE_contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #SE_formulaire {
+    flex: 1;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+  }
+  
+  #SE_footer_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1em; */
+  }
+
+  /* Menu GSM 
+*******************/
+/*==========*/
+
+  #SE_menu{
+    display: none;
+  }
+
+  #SE_menu_gsm {
+    display: block; /*pour afficher le menu caché*/
+    color: white;
+    font-weight: bolder;
+  }
+
+  #SE_menu_gsm_photo img {
+    width: 4em;
+    cursor: pointer;
+  }
+
+  #SE_menugsm {
+    position: absolute; /*sortir du flux(sans bouger les autres)*/
+    background-color: black;
+    width: 100%;
+    padding: 1em;
+  }
+
+  #SE_menugsm li {
+    border-bottom: solid 0.1em white;
+  }
+
+  .SE_submenu_icon {
+    float: right;
+  }
+
+  .SE_menu_gsm_submenu {
+    background-color: var(--film-grayblack);
+  }
+
+  .SE_menu_gsm_subbutton:hover {
+    background-color: var(--film-gold);
+  }
+
+  /*pour que les liens soient clickable sur toute la largere. */
+  #SE_menu_gsm a {
+    display: block;
+  }
+
+  .SE_menu_gsm_subbutton a {
+    padding: 0.8em;
+  }
+
+  .SE_menu_gsm_subbutton:hover a {
+    color: black;
+  }
+
+  /* gestion du click du menu
+*******************/
+ 
+.SE_menu_gsm_trigger {
+    display: none; /*cacher le check box*/ 
+  }
+
+#SE_trigger_menugsm:checked + #SE_menugsm,
+#SE_trigger_accueil:checked + #SE_accueil,
+#SE_trigger_actors:checked + #SE_actors
+  {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 0.7em;
+  }
+
+  header {
+    background-image: url('/devoirs/film/img/godfather_headerGSM.png') !important;
+  }
+
+  #SE_main_center {
+    width: 100%;
+  }
+
+  .SE_main_details,
+  .SE_main_casting, .SE_prancipal_actors  {
+    padding: 0 2em;
+  }
+
+  .SE_gallery_row li img {
+    width: 130px !important;
+    height: 100%;
+  }
+
+}
+
+@media only screen and (max-height: 605px) {
+  #SE_index_image {
+    display: none;
+  }
+}
