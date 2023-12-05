@@ -1,226 +1,208 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+    <head>
         <title>FilmMagik - Synopsis</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" type="image/x-icon" href="img/favricon-godfather.jpg">
-</head>
+    </head>
 
-<body>
+    <body>
         <header>
-                <div id="SE_header_logo">
-                        <img src="img/logo-godfather.png" alt="logo du site">
-                </div>
-                <nav id="SE_menu">
-                        <ul id="SE_menu_list">
-                                <li class="SE_menu_button"><a href="index.html">Accueil</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a
-                                                                href="index.html#SE_casting">Casting</a></li>
-                                                <li class="SE_menu_sub_button"><a
-                                                                href="index.html#SE_trailer">Bandes-annonces</a></li>
-                                                <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
-                                <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a
-                                                                href="actors.html#SE_principal_actors">Acteurs
-                                                                Principaux</a></li>
-                                                <li class="SE_menu_sub_button"><a
-                                                                href="actors.html#SE_other_actors">Acteurs
-                                                                Secondaires</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+            <div id="SE_header_logo">
+                <img src="img/logo-godfather.png" alt="logo du site">
+            </div>
+            <nav id="SE_menu">
+                <ul id="SE_menu_list">
+                    <li class="SE_menu_button"><a href="index.html">Accueil</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_casting">Casting</a></li>
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
+                            <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
                         </ul>
-                </nav>
+                    </li>
+                    <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
+                    <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-                <!--menu caché qui n"apparait que sur les petits écrans -->
-                <nav id="SE_menu_gsm">
+            <!--menu caché qui n"apparait que sur les petits écrans -->
+            <nav id="SE_menu_gsm">
+                <label>
+                    <div id="SE_menu_gsm_photo">
+                        <img src="img/menu_tree_line.png" alt="menu du gsm">
+                    </div>
+                    <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
+                    <ul id="SE_menugsm">
                         <label>
-                                <div id="SE_menu_gsm_photo">
-                                        <img src="img/menu_tree_line.png" alt="menu du gsm">
-                                </div>
-                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked"
-                                        id="SE_trigger_menugsm">
-                                <ul id="SE_menugsm">
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Accueil
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger"
-                                                                checked="checked" id="SE_trigger_accueil">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_accueil">
-                                                                <li class="SE_menu_gsm_subbutton"><a
-                                                                                href="index.html#SE_casting">Casting</a>
-                                                                </li>
-                                                                <li class="SE_menu_gsm_subbutton"><a
-                                                                                href="index.html#SE_trailer">Bandes-annonces</a>
-                                                                </li>
-                                                                <li class="SE_menu_gsm_subbutton"><a
-                                                                                href="gallery.html">Gallery</a></li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-                                        <li class="SE_menu_button">
-                                                <a href="synopsis.html">Synopsis</a>
-                                        </li>
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Actors
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger"
-                                                                checked="checked" id="SE_trigger_actors">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_actors">
-                                                                <li class="SE_menu_gsm_subbutton"><a
-                                                                                href="actors.html#SE_principal_actors">Acteurs
-                                                                                Principaux</a></li>
-                                                                <li class="SE_menu_gsm_subbutton"><a
-                                                                                href="actors.html#SE_other_actors">Acteurs
-                                                                                Secondaires</a></li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-                                        <li class="SE_menu_button">
-                                                <a href="contact.html">Contact</a>
-                                        </li>
+                            <li class="SE_menu_button">
+                                Accueil
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
+                                <ul class="SE_menu_gsm_submenu" id="SE_accueil">
+                                    <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_casting">Casting</a> </li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_trailer">Bandes-annonces</a> </li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="gallery.html">Gallery</a></li>
                                 </ul>
+                            </li>
                         </label>
-                </nav>
+                        <li class="SE_menu_button">
+                            <a href="synopsis.html">Synopsis</a>
+                        </li>
+                        <label>
+                            <li class="SE_menu_button">
+                                Actors
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
+                                <ul class="SE_menu_gsm_submenu" id="SE_actors">
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                                </ul>
+                            </li>
+                        </label>
+                        <li class="SE_menu_button">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </label>
+            </nav>
         </header>
         <main>
-                <div id="SE_main_center">
+            <div id="SE_main_center">
 
-                        <section class="SE_section_padding">
-                                <h1 id="SE_actor_title">Résumé de l'intrigue du Parrain</h1>
+                <section class="SE_section_padding">
+                    <h1 id="SE_actor_title">Résumé de l'intrigue du Parrain</h1>
 
-                                <p>"Le Parrain" est un film policier classique réalisé par Francis Ford Coppola et basé
-                                        sur le roman de Mario Puzo. Le film explore l'histoire de la famille criminelle
-                                        Corleone à New York.</p>
+                    <p>"Le Parrain" est un film policier classique réalisé par Francis Ford Coppola et basé
+                    sur le roman de Mario Puzo. Le film explore l'histoire de la famille criminelle
+                    Corleone à New York.</p>
 
-                                <h2 class="SE_section_title">Début : la famille Corleone et le mariage</h2>
-                                <p>En 1945, la ville de New York abrite la famille criminelle Corleone, dirigée par Vito
-                                        Corleone. L’histoire commence lors du mariage de la fille de Vito, Connie, avec
-                                        Carlo. Lors du mariage, Michael, le plus jeune fils de Vito et ancien Marine,
-                                        présente sa petite amie, Kay Adams, à sa famille. Johnny Fontane, filleul de
-                                        Vito et chanteur célèbre, cherche de l'aide pour décrocher un rôle au cinéma.
-                                        Vito envoie Tom Hagen, son conseiller, convaincre le président du studio, Jack
-                                        Woltz, de confier le rôle à Johnny, ce qui finit par se produire après une
-                                        horrible tactique de persuasion.</p>
+                    <h2 class="SE_section_title">Début : la famille Corleone et le mariage</h2>
+                    <p>En 1945, la ville de New York abrite la famille criminelle Corleone, dirigée par Vito
+                    Corleone. L’histoire commence lors du mariage de la fille de Vito, Connie, avec
+                    Carlo. Lors du mariage, Michael, le plus jeune fils de Vito et ancien Marine,
+                    présente sa petite amie, Kay Adams, à sa famille. Johnny Fontane, filleul de
+                    Vito et chanteur célèbre, cherche de l'aide pour décrocher un rôle au cinéma.
+                    Vito envoie Tom Hagen, son conseiller, convaincre le président du studio, Jack
+                    Woltz, de confier le rôle à Johnny, ce qui finit par se produire après une
+                    horrible tactique de persuasion.</p>
 
-                                <h2 class="SE_section_title">La proposition de Sollozzo et la tourmente commence</h2>
-                                <p>À l'approche de Noël, Sollozzo, un baron de la drogue, propose à Vito un partenariat
-                                        commercial dans le domaine des stupéfiants, qui est refusé en raison de la
-                                        crainte de Vito de perdre ses relations politiques. Les soupçons sur les liens
-                                        de Sollozzo avec la famille criminelle Tattaglia conduisent Vito à envoyer Luca
-                                        Brasi, son exécuteur, en mission. Cependant, Brasi est tué pendant la mission,
-                                        et Vito est ensuite abattu et laissé dans un état critique.</p>
+                    <h2 class="SE_section_title">La proposition de Sollozzo et la tourmente commence</h2>
+                    <p>À l'approche de Noël, Sollozzo, un baron de la drogue, propose à Vito un partenariat
+                    commercial dans le domaine des stupéfiants, qui est refusé en raison de la
+                    crainte de Vito de perdre ses relations politiques. Les soupçons sur les liens
+                    de Sollozzo avec la famille criminelle Tattaglia conduisent Vito à envoyer Luca
+                    Brasi, son exécuteur, en mission. Cependant, Brasi est tué pendant la mission,
+                    et Vito est ensuite abattu et laissé dans un état critique.</p>
 
-                                <h2 class="SE_section_title">L'implication et la vengeance de Michael</h2>
-                                <p>Vito étant frappé d'incapacité, son premier-né, Sonny, prend le contrôle. Après une
-                                        nouvelle tentative d'assassinat de Vito, Michael intervient, tue Sollozzo et le
-                                        capitaine de police corrompu McCluskey, puis se cache en Sicile, tandis que les
-                                        Cinq Familles se lancent dans la guerre.</p>
+                    <h2 class="SE_section_title">L'implication et la vengeance de Michael</h2>
+                    <p>Vito étant frappé d'incapacité, son premier-né, Sonny, prend le contrôle. Après une
+                    nouvelle tentative d'assassinat de Vito, Michael intervient, tue Sollozzo et le
+                    capitaine de police corrompu McCluskey, puis se cache en Sicile, tandis que les
+                    Cinq Familles se lancent dans la guerre.</p>
 
-                                <h2 class="SE_section_title">Les Fallout et la nouvelle vie de Michael</h2>
-                                <p>À la suite des violences, Sonny est tué dans une embuscade et Michael se marie en
-                                        Sicile, pour ensuite perdre sa femme dans une voiture piégée. Vito, cherchant à
-                                        mettre fin à la violence, accepte une rencontre avec les Cinq Familles et
-                                        renonce à son opposition à leur trafic de stupéfiants.</p>
+                    <h2 class="SE_section_title">Les Fallout et la nouvelle vie de Michael</h2>
+                    <p>À la suite des violences, Sonny est tué dans une embuscade et Michael se marie en
+                    Sicile, pour ensuite perdre sa femme dans une voiture piégée. Vito, cherchant à
+                    mettre fin à la violence, accepte une rencontre avec les Cinq Familles et
+                    renonce à son opposition à leur trafic de stupéfiants.</p>
 
-                                <h2 class="SE_section_title">L’ascendance du décès de Michael et Vito</h2>
-                                <p>Michael, désormais prêt à reprendre l'entreprise familiale, rentre chez lui pour
-                                        épouser Kay et fonder une famille. Alors que la santé de Vito décline, Michael
-                                        prend la tête de la famille Corleone, réaffecte Hagen et part à Las Vegas pour
-                                        racheter la participation de Greene dans les casinos de la famille.</p>
+                    <h2 class="SE_section_title">L’ascendance du décès de Michael et Vito</h2>
+                    <p>Michael, désormais prêt à reprendre l'entreprise familiale, rentre chez lui pour
+                    épouser Kay et fonder une famille. Alors que la santé de Vito décline, Michael
+                    prend la tête de la famille Corleone, réaffecte Hagen et part à Las Vegas pour
+                    racheter la participation de Greene dans les casinos de la famille.</p>
 
-                                <h2 class="SE_section_title">Le jeu de pouvoir final</h2>
-                                <p>À la mort de Vito, la trahison de Tessio est révélée. Alors que Michael devient le
-                                        parrain du bébé de Connie, les chefs restants des Cinq Familles et Greene sont
-                                        éliminés. Tessio est exécuté pour sa trahison et Carlo est tué après avoir avoué
-                                        son rôle dans le meurtre de Sonny.</p>
+                    <h2 class="SE_section_title">Le jeu de pouvoir final</h2>
+                    <p>À la mort de Vito, la trahison de Tessio est révélée. Alors que Michael devient le
+                    parrain du bébé de Connie, les chefs restants des Cinq Familles et Greene sont
+                    éliminés. Tessio est exécuté pour sa trahison et Carlo est tué après avoir avoué
+                    son rôle dans le meurtre de Sonny.</p>
 
-                                <h2 class="SE_section_title">Le nouveau Don Corleone</h2>
-                                <p>Alors que Connie confronte Michael à propos de la mort de Carlo, il nie toute
-                                        implication. Les Capos rendent hommage à Michael, désormais reconnu sous le nom
-                                        de « Don Corleone », marquant une nouvelle ère pour la famille criminelle
-                                        Corleone.</p>
+                    <h2 class="SE_section_title">Le nouveau Don Corleone</h2>
+                    <p>Alors que Connie confronte Michael à propos de la mort de Carlo, il nie toute
+                    implication. Les Capos rendent hommage à Michael, désormais reconnu sous le nom
+                    de « Don Corleone », marquant une nouvelle ère pour la famille criminelle
+                    Corleone.</p>
 
-                                <h2 class="SE_section_title">Revoir</h2>
-                                <p>« Le Parrain » est un film policier américain de 1972 réalisé par Francis Ford
-                                        Coppola et mettant en vedette Marlon Brando, Al Pacino et James Caan. Basé sur
-                                        le roman du même nom de Mario Puzo, le film raconte l'histoire de la famille
-                                        Corleone, un puissant clan mafieux de New York, et leurs luttes pour maintenir
-                                        leur pouvoir et protéger leurs intérêts dans un monde de violence et de
-                                        trahison.</p>
-                                <p>Le film est un chef-d’œuvre du genre policier, avec son intrigue complexe, ses
-                                        personnages complexes et ses performances emblématiques. Il est largement
-                                        considéré comme l’un des plus grands films jamais réalisés et une œuvre
-                                        déterminante du cinéma américain.</p>
-                                <p>Le style visuel du film, de ses intérieurs sombres à ses superbes plans extérieurs de
-                                        New York, est exécuté de main de maître, créant une expérience cinématographique
-                                        puissante et immersive. L’utilisation de l’ombre et de la lumière est
-                                        particulièrement remarquable, car elle met l’accent sur les thèmes du pouvoir,
-                                        de la corruption et de la moralité du film.</p>
-                                <p>Le scénario du film, co-écrit par Puzo et Coppola, est un exemple classique de la
-                                        structure en trois actes proposée par Syd Field. Le premier acte présente les
-                                        personnages et leurs motivations, le deuxième acte implique les efforts de la
-                                        famille pour maintenir son pouvoir et le troisième acte présente les
-                                        conséquences tragiques de leurs actes. Cette structure permet de garder
-                                        l'histoire concentrée et intense, car chaque acte s'appuie sur le précédent,
-                                        menant à une conclusion puissante et tragique.</p>
-                                <p>Chacun des personnages principaux subit une transformation tout au long du film,
-                                        leurs motivations et leurs personnalités évoluant au fur et à mesure de
-                                        l'histoire. Les arcs de personnages sont particulièrement bien développés,
-                                        l’exploration du film sur la famille, la loyauté et la trahison créant des
-                                        personnages complexes et mémorables.</p>
-                                <p>La musique du film, composée par Nino Rota, est un élément marquant du film.
-                                        L’utilisation d’une mélodie envoûtante, connue sous le nom de « La Valse du
-                                        Parrain », ajoute une couche de profondeur émotionnelle à l’histoire, élevant le
-                                        film au-delà d’un simple drame policier. L’utilisation de la musique comme moyen
-                                        de narration témoigne du pouvoir du son au cinéma et constitue une
-                                        caractéristique du style cinématographique de Coppola.</p>
-                        </section>
+                    <h2 class="SE_section_title">Revoir</h2>
+                    <p>« Le Parrain » est un film policier américain de 1972 réalisé par Francis Ford
+                    Coppola et mettant en vedette Marlon Brando, Al Pacino et James Caan. Basé sur
+                    le roman du même nom de Mario Puzo, le film raconte l'histoire de la famille
+                    Corleone, un puissant clan mafieux de New York, et leurs luttes pour maintenir
+                    leur pouvoir et protéger leurs intérêts dans un monde de violence et de
+                    trahison.</p>
+                    <p>Le film est un chef-d’œuvre du genre policier, avec son intrigue complexe, ses
+                    personnages complexes et ses performances emblématiques. Il est largement
+                    considéré comme l’un des plus grands films jamais réalisés et une œuvre
+                    déterminante du cinéma américain.</p>
+                    <p>Le style visuel du film, de ses intérieurs sombres à ses superbes plans extérieurs de
+                    New York, est exécuté de main de maître, créant une expérience cinématographique
+                    puissante et immersive. L’utilisation de l’ombre et de la lumière est
+                    particulièrement remarquable, car elle met l’accent sur les thèmes du pouvoir,
+                    de la corruption et de la moralité du film.</p>
+                    <p>Le scénario du film, co-écrit par Puzo et Coppola, est un exemple classique de la
+                    structure en trois actes proposée par Syd Field. Le premier acte présente les
+                    personnages et leurs motivations, le deuxième acte implique les efforts de la
+                    famille pour maintenir son pouvoir et le troisième acte présente les
+                    conséquences tragiques de leurs actes. Cette structure permet de garder
+                    l'histoire concentrée et intense, car chaque acte s'appuie sur le précédent,
+                    menant à une conclusion puissante et tragique.</p>
+                    <p>Chacun des personnages principaux subit une transformation tout au long du film,
+                    leurs motivations et leurs personnalités évoluant au fur et à mesure de
+                    l'histoire. Les arcs de personnages sont particulièrement bien développés,
+                    l’exploration du film sur la famille, la loyauté et la trahison créant des
+                    personnages complexes et mémorables.</p>
+                    <p>La musique du film, composée par Nino Rota, est un élément marquant du film.
+                    L’utilisation d’une mélodie envoûtante, connue sous le nom de « La Valse du
+                    Parrain », ajoute une couche de profondeur émotionnelle à l’histoire, élevant le
+                    film au-delà d’un simple drame policier. L’utilisation de la musique comme moyen
+                    de narration témoigne du pouvoir du son au cinéma et constitue une
+                    caractéristique du style cinématographique de Coppola.</p>
+                </section>
 
-                </div>
+            </div>
 
 
         </main>
 
         <footer>
-                <section id="SE_footer_contact">
-                        <div id="SE_search_box">
-                                <form action="https://www.google.com/search" method="GET">
-                                        <input type="text" placeholder="Cherche" required>
-                                        <input type="submit" class="SE_footer_button">
-                                </form>
-                        </div>
+            <section id="SE_footer_contact">
+                <div id="SE_search_box">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" placeholder="Cherche" required>
+                        <input type="submit" class="SE_footer_button">
+                    </form>
+                </div>
 
-                        <div>
-                                <p>&copy; 2023 Box Office Successes</p>
-                        </div>
+                <div>
+                    <p>&copy; 2023 Box Office Successes</p>
+                </div>
 
-                        <div class="">
-                                <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
-                                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
-                                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
-                                </a>
-                        </div>
-                </section>
+                <div>
+                    <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
+                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
+                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
+                    </a>
+                </div>
+            </section>
         </footer>
-</body>
+    </body>
 
 </html>

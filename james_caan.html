@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+    <head>
         <title>FilmMagik - James Caan</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" type="image/x-icon" href="img/favricon-godfather.jpg">
-</head>
+    </head>
 
-<body>
+    <body>
         <header>
-                <div id="SE_header_logo">
-                        <img src="img/logo-godfather.png" alt="logo du site">
-                </div>
-                <nav id="SE_menu">
-                        <ul id="SE_menu_list">
-                                <li class="SE_menu_button"><a href="index.html">Accueil</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a href="index.html#SE_casting">Casting</a></li>
-                                                <li class="SE_menu_sub_button"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
-                                                <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
-                                <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
-                                                <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+            <div id="SE_header_logo">
+                <img src="img/logo-godfather.png" alt="logo du site">
+            </div>
+            <nav id="SE_menu">
+                <ul id="SE_menu_list">
+                    <li class="SE_menu_button"><a href="index.html">Accueil</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_casting">Casting</a></li>
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
+                            <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
                         </ul>
-                </nav>
+                    </li>
+                    <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
+                    <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-                <!--menu caché qui n"apparait que sur les petits écrans -->
-                <nav id="SE_menu_gsm">
+            <!--menu caché qui n"apparait que sur les petits écrans -->
+            <nav id="SE_menu_gsm">
+                <label>
+                    <div id="SE_menu_gsm_photo">
+                        <img src="img/menu_tree_line.png" alt="menu du gsm">
+                    </div>
+                    <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
+                    <ul id="SE_menugsm">
                         <label>
-                                <div id="SE_menu_gsm_photo">
-                                        <img src="img/menu_tree_line.png" alt="menu du gsm">
-                                </div>
-                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
-                                <ul id="SE_menugsm">
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Accueil
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_accueil">
-                                                                <li class="SE_menu_gsm_subbutton">
-                                                                        <a href="index.html#SE_casting">Casting</a>
-                                                                </li>
-                                                                <li class="SE_menu_gsm_subbutton">
-                                                                        <a href="index.html#SE_trailer">Bandes-annonces</a>
-                                                                </li>
-                                                                <li class="SE_menu_gsm_subbutton">
-                                                                        <a href="gallery.html">Gallery</a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-                                        <li class="SE_menu_button">
-                                                <a href="synopsis.html">Synopsis</a>
-                                        </li>
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Actors
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_actors">
-                                                                <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
-                                                                <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-                                        <li class="SE_menu_button">
-                                                <a href="contact.html">Contact</a>
-                                        </li>
+                            <li class="SE_menu_button">
+                                Accueil
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
+                                <ul class="SE_menu_gsm_submenu" id="SE_accueil">
+                                    <li class="SE_menu_gsm_subbutton">
+                                        <a href="index.html#SE_casting">Casting</a>
+                                    </li>
+                                    <li class="SE_menu_gsm_subbutton">
+                                        <a href="index.html#SE_trailer">Bandes-annonces</a>
+                                    </li>
+                                    <li class="SE_menu_gsm_subbutton">
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
                                 </ul>
+                            </li>
                         </label>
-                </nav>
+                        <li class="SE_menu_button">
+                            <a href="synopsis.html">Synopsis</a>
+                        </li>
+                        <label>
+                            <li class="SE_menu_button">
+                                Actors
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
+                                <ul class="SE_menu_gsm_submenu" id="SE_actors">
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                                </ul>
+                            </li>
+                        </label>
+                        <li class="SE_menu_button">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </label>
+            </nav>
         </header>
         <main>
 
-                <div id="SE_main_center">
-                        <h2 id="SE_actor_title">James Caan</h2>
-                        <section id="SE_actor_status" class="SE_section_padding">
-                                <div class="SE_actor_image">
-                                        <img src="img/casting/james_caan.png" alt="james caan">
-                                </div>
+            <div id="SE_main_center">
+                <h2 id="SE_actor_title">James Caan</h2>
+                <section id="SE_actor_status" class="SE_section_padding">
+                    <div class="SE_actor_image">
+                        <img src="img/casting/james_caan.png" alt="james caan">
+                    </div>
 
-                                <ul class="SE_actor_detail">
-                                        <li><span>Métiers : </span>Acteur, Réalisateur</li>
-                                        <li><span>Nationalité : </span>Américain</li>
-                                        <li><span>Naissance : </span>26 mars 1940 (Le Bronx, New York - États-Unis)</li>
-                                        <li><span>Décès : </span> 6 juillet 2022 à l'age de 82 ans</li>
-                                </ul>
-                        </section>
+                    <ul class="SE_actor_detail">
+                        <li><span>Métiers : </span>Acteur, Réalisateur</li>
+                        <li><span>Nationalité : </span>Américain</li>
+                        <li><span>Naissance : </span>26 mars 1940 (Le Bronx, New York - États-Unis)</li>
+                        <li><span>Décès : </span> 6 juillet 2022 à l'age de 82 ans</li>
+                    </ul>
+                </section>
 
-                        <section class="SE_actor_bio SE_section_padding">
-                                <h2 class="SE_section_title">Biographie</h2>
-                                <p>Après avoir passé sa jeunesse dans le Queens à New York, James Caan intègre la Michigan State University à l'âge de seize ans pour y étudier l'économie et jouer au football américain. Il s'oriente ensuite vers une formation juridique à la Hofstra University, mais une audition lui permet d'entrer au Neigborhood Playhouse de Sanford Meisner. Il obtient par la suite une bourse pour étudier avec Wynn Handman, célèbre professeur d'art dramatique, et décroche les quatre premiers rôles pour lesquels il est auditionné.</p>
-                                <p>James Caan débute sur scène en 1961 dans "La Ronde" puis joue à Broadway "Mandingo" et "Blood, sweat and Stanley Poole". Après plusieurs apparitions dans des séries télé (Naked City, Les Incorruptibles, etc.), il apparaît pour la première fois au cinéma dans Irma la Douce (1963) de Billy Wilder et après un passage remarqué dans deux longs métrages de Howard Hawks (Ligne rouge 7000 (1965) et El Dorado (1967) aux côtés de John Wayne), il se retrouve en tête d'affiche des Gens de la pluie (1969) de Francis Ford Coppola.</p>
-                                <p>En 1975, son passé de grand sportif permet à James Caan d'endosser des rôles particulièrement physiques : il effectue ses propres cascades dans le futuriste et violent Rollerball de Norman Jewison et pratique les arts martiaux pour les besoins de Tueur d'élite, film d'espionnage de Sam Peckinpah. L'année d'après, il rejoint le prestigieux casting d'Un pont trop loin (1977) et se fait diriger par Claude Lelouch dans Un autre homme, une autre chance (id.), mélange de romance et de western avec pour toile de fond les Etats-Unis des années 1870. Les deux hommes collaboreront à nouveau ensemble sur Les Uns et les autres en 1981.</p>
-                        </section>
+                <section class="SE_actor_bio SE_section_padding">
+                    <h2 class="SE_section_title">Biographie</h2>
+                    <p>Après avoir passé sa jeunesse dans le Queens à New York, James Caan intègre la Michigan State University à l'âge de seize ans pour y étudier l'économie et jouer au football américain. Il s'oriente ensuite vers une formation juridique à la Hofstra University, mais une audition lui permet d'entrer au Neigborhood Playhouse de Sanford Meisner. Il obtient par la suite une bourse pour étudier avec Wynn Handman, célèbre professeur d'art dramatique, et décroche les quatre premiers rôles pour lesquels il est auditionné.</p>
+                    <p>James Caan débute sur scène en 1961 dans "La Ronde" puis joue à Broadway "Mandingo" et "Blood, sweat and Stanley Poole". Après plusieurs apparitions dans des séries télé (Naked City, Les Incorruptibles, etc.), il apparaît pour la première fois au cinéma dans Irma la Douce (1963) de Billy Wilder et après un passage remarqué dans deux longs métrages de Howard Hawks (Ligne rouge 7000 (1965) et El Dorado (1967) aux côtés de John Wayne), il se retrouve en tête d'affiche des Gens de la pluie (1969) de Francis Ford Coppola.</p>
+                    <p>En 1975, son passé de grand sportif permet à James Caan d'endosser des rôles particulièrement physiques : il effectue ses propres cascades dans le futuriste et violent Rollerball de Norman Jewison et pratique les arts martiaux pour les besoins de Tueur d'élite, film d'espionnage de Sam Peckinpah. L'année d'après, il rejoint le prestigieux casting d'Un pont trop loin (1977) et se fait diriger par Claude Lelouch dans Un autre homme, une autre chance (id.), mélange de romance et de western avec pour toile de fond les Etats-Unis des années 1870. Les deux hommes collaboreront à nouveau ensemble sur Les Uns et les autres en 1981.</p>
+                </section>
 
-                        <section class="SE_actor_bio SE_section_padding">
-                                <h2 class="SE_section_title">Filmographie</h2>
+                <section class="SE_actor_bio SE_section_padding">
+                    <h2 class="SE_section_title">Filmographie</h2>
 
-                                <ul class="SE_actor_detail">
-                                        <li><span>1963 : </span>Irma la Douce</li>
-                                        <li><span>1964 : </span>Une femme dans une cage</li>
-                                        <li><span>1967 : </span>El Dorado</li>
-                                        <li><span>1972 : </span>Le Parrain (The Godfather) de Francis Ford Coppola</li>
-                                        <li><span>1974 : </span>Le Parrain 2e partie (The Godfather: Part II)</li>
-                                        <li><span>1977 : </span>Un autre homme, une autre chance</li>
-                                        <li><span>1979 : </span>Chapter Two</li>
-                                        <li><span>2000 : </span>Way of the Gun</li>
-                                </ul>
-                        </section>
-                </div>
+                    <ul class="SE_actor_detail">
+                        <li><span>1963 : </span>Irma la Douce</li>
+                        <li><span>1964 : </span>Une femme dans une cage</li>
+                        <li><span>1967 : </span>El Dorado</li>
+                        <li><span>1972 : </span>Le Parrain (The Godfather) de Francis Ford Coppola</li>
+                        <li><span>1974 : </span>Le Parrain 2e partie (The Godfather: Part II)</li>
+                        <li><span>1977 : </span>Un autre homme, une autre chance</li>
+                        <li><span>1979 : </span>Chapter Two</li>
+                        <li><span>2000 : </span>Way of the Gun</li>
+                    </ul>
+                </section>
+            </div>
         </main>
         <footer>
-                <section id="SE_footer_contact">
-                        <div id="SE_search_box">
-                                <form action="https://www.google.com/search" method="GET">
-                                        <input type="text" placeholder="Cherche" required>
-                                        <input type="submit" class="SE_footer_button">
-                                </form>
-                        </div>
+            <section id="SE_footer_contact">
+                <div id="SE_search_box">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" placeholder="Cherche" required>
+                        <input type="submit" class="SE_footer_button">
+                    </form>
+                </div>
 
-                        <div>
-                                <p>&copy; 2023 Box Office Successes</p>
-                        </div>
+                <div>
+                    <p>&copy; 2023 Box Office Successes</p>
+                </div>
 
-                        <div class="">
-                                <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
-                                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
-                                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
-                                </a>
-                        </div>
-                </section>
+                <div>
+                    <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
+                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
+                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
+                    </a>
+                </div>
+            </section>
         </footer>
-</body>
+    </body>
 
 </html>

@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+    <head>
         <title></title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" type="image/x-icon" href="img/favricon-godfather.jpg">
-</head>
+    </head>
 
-<body>
+    <body>
         <header>
-                <div id="SE_header_logo">
-                        <img src="img/logo-godfather.png" alt="logo du site">
-                </div>
-                <nav id="SE_menu">
-                        <ul id="SE_menu_list">
-                                <li class="SE_menu_button"><a href="index.html">Accueil</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a href="index.html#SE_casting">Casting</a></li>
-                                                <li class="SE_menu_sub_button"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
-                                                <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
-                                <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
-                                        <ul class="SE_menu_sub">
-                                                <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
-                                                <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
-                                        </ul>
-                                </li>
-                                <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+            <div id="SE_header_logo">
+                <img src="img/logo-godfather.png" alt="logo du site">
+            </div>
+            <nav id="SE_menu">
+                <ul id="SE_menu_list">
+                    <li class="SE_menu_button"><a href="index.html">Accueil</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_casting">Casting</a></li>
+                            <li class="SE_menu_sub_button"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
+                            <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
                         </ul>
-                </nav>
+                    </li>
+                    <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
+                    <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-                <!--menu caché qui n"apparait que sur les petits écrans -->
-                <nav id="SE_menu_gsm">
+            <!--menu caché qui n"apparait que sur les petits écrans -->
+            <nav id="SE_menu_gsm">
+                <label>
+                    <div id="SE_menu_gsm_photo">
+                        <img src="img/menu_tree_line.png" alt="menu du gsm">
+                    </div>
+                    <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
+                    <ul id="SE_menugsm">
                         <label>
-                                <div id="SE_menu_gsm_photo">
-                                        <img src="img/menu_tree_line.png" alt="menu du gsm">
-                                </div>
-                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
-                                <ul id="SE_menugsm">
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Accueil
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_accueil">
-                                                                <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_casting">Casting</a></li>
-                                                                <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
-                                                                <li class="SE_menu_gsm_subbutton"><a href="gallery.html">Gallery</a></li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-                                        <li class="SE_menu_button">
-                                                <a href="synopsis.html">Synopsis</a>
-                                        </li>
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        Actors
-                                                        <span class="SE_submenu_icon">▼</span>
-                                                        <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
-                                                        <ul class="SE_menu_gsm_submenu" id="SE_actors">
-                                                                <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
-                                                                <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
-                                                        </ul>
-                                                </li>
-                                        </label>
-
-                                        <label>
-                                                <li class="SE_menu_button">
-                                                        <a href="contact.html">Contact</a>
-                                                </li>
-                                        </label>
+                            <li class="SE_menu_button">
+                                Accueil
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
+                                <ul class="SE_menu_gsm_submenu" id="SE_accueil">
+                                    <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_casting">Casting</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="index.html#SE_trailer">Bandes-annonces</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="gallery.html">Gallery</a></li>
                                 </ul>
+                            </li>
                         </label>
-                </nav>
+                        <li class="SE_menu_button">
+                            <a href="synopsis.html">Synopsis</a>
+                        </li>
+                        <label>
+                            <li class="SE_menu_button">
+                                Actors
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
+                                <ul class="SE_menu_gsm_submenu" id="SE_actors">
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                                </ul>
+                            </li>
+                        </label>
+
+                        <label>
+                            <li class="SE_menu_button">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </label>
+                    </ul>
+                </label>
+            </nav>
         </header>
 
 
 
         <main>
 
-                <div id="SE_main_center">
-                        <section class="SE_section_padding">
+            <div id="SE_main_center">
+                <section class="SE_section_padding">
 
-                        </section>
+                </section>
 
 
-                </div>
+            </div>
 
 
 
@@ -99,34 +99,34 @@
 
 
         <footer>
-                <section id="SE_footer_contact">
-                        <div id="SE_search_box">
-                                <form action="https://www.google.com/search" method="GET">
-                                        <input type="text" placeholder="Cherche" required>
-                                        <input type="submit" class="SE_footer_button">
-                                </form>
-                        </div>
+            <section id="SE_footer_contact">
+                <div id="SE_search_box">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" placeholder="Cherche" required>
+                        <input type="submit" class="SE_footer_button">
+                    </form>
+                </div>
 
-                        <div>
-                                <p>&copy; 2023 Box Office Successes</p>
-                        </div>
+                <div>
+                    <p>&copy; 2023 Box Office Successes</p>
+                </div>
 
-                        <div class="">
-                                <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
-                                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
-                                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
-                                </a>
-                                <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-                                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
-                                </a>
-                        </div>
-                </section>
+                <div>
+                    <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
+                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
+                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
+                    </a>
+                </div>
+            </section>
         </footer>
-</body>
+    </body>
 
 </html>

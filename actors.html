@@ -1,379 +1,354 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-	<head>
-		<title>FilmMagik - Acteurs</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="icon" type="image/x-icon" href="img/favricon-godfather.jpg">
-	</head>
+    <head>
+        <title>FilmMagik - Acteurs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" type="image/x-icon" href="img/favricon-godfather.jpg">
+    </head>
 
-	<body>
-		<header>
-			<div id="SE_header_logo">
-				<img src="img/logo-godfather.png" alt="logo du site">
-			</div>
-			<nav id="SE_menu">
-				<ul id="SE_menu_list">
-					<li class="SE_menu_button"><a href="index.html">Accueil</a>
-						<ul class="SE_menu_sub">
-							<li class="SE_menu_sub_button"><a
-							    href="index.html#SE_casting">Casting</a></li>
-							<li class="SE_menu_sub_button"><a
-							    href="index.html#SE_trailer">Bandes-annonces</a></li>
-							<li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
-						</ul>
-					</li>
-					<li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
-					<li class="SE_menu_button"><a href="actors.html">Acteurs</a>
-						<ul class="SE_menu_sub">
-							<li class="SE_menu_sub_button"><a
-							    href="actors.html#SE_principal_actors">Acteurs
-							    Principaux</a></li>
-							<li class="SE_menu_sub_button"><a
-							    href="actors.html#SE_other_actors">Acteurs
-							    Secondaires</a></li>
-						</ul>
-					</li>
-					<li class="SE_menu_button"><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+    <body>
+        <header>
+            <div id="SE_header_logo">
+                <img src="img/logo-godfather.png" alt="logo du site">
+            </div>
+            <nav id="SE_menu">
+                <ul id="SE_menu_list">
+                    <li class="SE_menu_button"><a href="index.html">Accueil</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a
+                                href="index.html#SE_casting">Casting</a></li>
+                            <li class="SE_menu_sub_button"><a
+                                href="index.html#SE_trailer">Bandes-annonces</a></li>
+                            <li class="SE_menu_sub_button"><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="SE_menu_button"><a href="synopsis.html">Synopsis</a></li>
+                    <li class="SE_menu_button"><a href="actors.html">Acteurs</a>
+                        <ul class="SE_menu_sub">
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                            <li class="SE_menu_sub_button"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                        </ul>
+                    </li>
+                    <li class="SE_menu_button"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-			<!--menu caché qui n"apparait que sur les petits écrans -->
-			<nav id="SE_menu_gsm">
-				<label>
-					<div id="SE_menu_gsm_photo">
-						<img src="img/menu_tree_line.png" alt="menu du gsm">
-					</div>
-					<input type="checkbox" class="SE_menu_gsm_trigger" checked="checked"
-											   id="SE_trigger_menugsm">
-					<ul id="SE_menugsm">
-						<label>
-							<li class="SE_menu_button">
-								Accueil
-								<span class="SE_submenu_icon">▼</span>
-								<input type="checkbox" class="SE_menu_gsm_trigger"
-										       checked="checked" id="SE_trigger_accueil">
-								<ul class="SE_menu_gsm_submenu" id="SE_accueil">
-									<li class="SE_menu_gsm_subbutton"><a
-									    href="index.html#SE_casting">Casting</a>
-									</li>
-									<li class="SE_menu_gsm_subbutton"><a
-									    href="index.html#SE_trailer">Bandes-annonces</a>
-									</li>
-									<li class="SE_menu_gsm_subbutton"><a
-									    href="gallery.html">Gallery</a></li>
-								</ul>
-							</li>
-						</label>
-						<li class="SE_menu_button">
-							<a href="synopsis.html">Synopsis</a>
-						</li>
-						<label>
-							<li class="SE_menu_button">
-								Actors
-								<span class="SE_submenu_icon">▼</span>
-								<input type="checkbox" class="SE_menu_gsm_trigger"
-										       checked="checked" id="SE_trigger_actors">
-								<ul class="SE_menu_gsm_submenu" id="SE_actors">
-									<li class="SE_menu_gsm_subbutton"><a
-									    href="actors.html#SE_principal_actors">Acteurs
-									    Principaux</a></li>
-									<li class="SE_menu_gsm_subbutton"><a
-									    href="actors.html#SE_other_actors">Acteurs
-									    Secondaires</a></li>
-								</ul>
-							</li>
-						</label>
-						<li class="SE_menu_button">
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</label>
-			</nav>
-		</header>
-		<main>
+            <!--menu caché qui n"apparait que sur les petits écrans -->
+            <nav id="SE_menu_gsm">
+                <label>
+                    <div id="SE_menu_gsm_photo">
+                        <img src="img/menu_tree_line.png" alt="menu du gsm">
+                    </div>
+                    <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_menugsm">
+                    <ul id="SE_menugsm">
+                        <label>
+                            <li class="SE_menu_button">
+                                Accueil
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_accueil">
+                                <ul class="SE_menu_gsm_submenu" id="SE_accueil">
+                                    <li class="SE_menu_gsm_subbutton"><a
+                                        href="index.html#SE_casting">Casting</a>
+                                    </li>
+                                    <li class="SE_menu_gsm_subbutton"><a
+                                        href="index.html#SE_trailer">Bandes-annonces</a>
+                                    </li>
+                                    <li class="SE_menu_gsm_subbutton"><a
+                                        href="gallery.html">Gallery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </label>
+                        <li class="SE_menu_button">
+                            <a href="synopsis.html">Synopsis</a>
+                        </li>
+                        <label>
+                            <li class="SE_menu_button">
+                                Actors
+                                <span class="SE_submenu_icon">▼</span>
+                                <input type="checkbox" class="SE_menu_gsm_trigger" checked="checked" id="SE_trigger_actors">
+                                <ul class="SE_menu_gsm_submenu" id="SE_actors">
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_principal_actors">Acteurs Principaux</a></li>
+                                    <li class="SE_menu_gsm_subbutton"><a href="actors.html#SE_other_actors">Acteurs Secondaires</a></li>
+                                </ul>
+                            </li>
+                        </label>
+                        <li class="SE_menu_button">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </label>
+            </nav>
+        </header>
 
-			<div id="SE_main_center">
+        <main>
+            <div id="SE_main_center">
+                <section class="SE_main_casting SE_section_padding">
+                    <h2 class="SE_section_title">Directeurs</h2>
+                    <ul class="SE_main_casting_photo SE_photo_center">
+                        <li>
+                            <a href="ford_coppola.html"><img src="img/casting/ford cappola.png" alt="Francis Ford Coppola"></a>
+                            <h3>Francis Ford Coppola</h3>
+                        </li>
+                        <li>
+                            <a href="albert_ruddy.html"><img src="img/casting/al roudy.png" alt="Albert S. Ruddy"></a>
+                            <h3>Albert S. Ruddy</h3>
+                        </li>
+                    </ul>
 
-				<section class="SE_main_casting SE_section_padding">
+                    <h2 class="SE_section_title">Écrivains</h2>
+                    <ul class="SE_main_casting_photo SE_photo_center">
 
-					<h2 class="SE_section_title">Directeurs</h2>
-					<ul class="SE_main_casting_photo SE_photo_center">
+                        <li>
+                            <a href="mario_puzo.html"><img src="img/casting/Mario Puzo.png" alt="Mario Puzo"></a>
+                            <h3>Mario Puzo</h3>
+                        </li>
+                        <li>
+                            <a href="ford_coppola.html"><img src="img/casting/ford cappola.png" alt="Francis Ford Coppola"></a>
+                            <h3>Francis Ford Coppola</h3>
+                        </li>
+                    </ul>
 
-						<li>
-							<a href="ford_coppola.html"><img src="img/casting/ford cappola.png"
-											 alt="Francis Ford Coppola"></a>
-							<h3>Francis Ford Coppola</h3>
-						</li>
-						<li>
-							<a href="albert _ruddy.html"><img src="img/casting/al roudy.png"
-											  alt="Albert S. Ruddy"></a>
-							<h3>Albert S. Ruddy</h3>
-						</li>
-					</ul>
+                    <h2 class="SE_section_title" id="SE_principal_actors">Casting de Le Parrain</h2>
+                    <ul class="SE_main_casting_photo">
+                        <li>
+                            <a href="malron_brando.html"><img src="img/casting/marlon_brando.png" alt="marlon brando"></a>
+                            <h3>Marlon Brando</h3>
+                            <p>Don Vito Corleone</p>
+                        </li>
+                        <li>
+                            <a href="al_pacino.html"><img src="img/casting/al_pacino.png" alt="al pacino"></a>
+                            <h3>Al Pacino</h3>
+                            <p>Michael Corleone</p>
+                        </li>
+                        <li>
+                            <a href="james_caan.html"><img src="img/casting/james_caan.png" alt="james caan"></a>
+                            <h3>James Caan</h3>
+                            <p>Sonny Corleone</p>
+                        </li>
+                        <li>
+                            <a href="richard_castellano.html"><img
+                               src="img/casting/Richard_S_Castellano.png"
+                               alt="Richard S Castellano"></a>
+                            <h3>Richard S. Castellano</h3>
+                            <p>Clemenza</p>
+                        </li>
+                        <li>
+                            <a href="robert_duvall.html"><img src="img/casting/robert_duvall.png" alt="robert duvall"></a>
+                            <h3>Robert Duvall</h3>
+                            <p>Tom Hagen</p>
+                        </li>
+                        <li>
+                            <a href="sterling_hayden.html"><img src="img/casting/sterling_hayden.png" alt="sterling hayden"></a>
+                            <h3>Sterling Hayden</h3>
+                            <p>Capitaine McCluskey</p>
+                        </li>
+                        <li>
+                            <a href="john_marley.html"><img src="img/casting/john_marley.png" alt="john Marley"></a>
+                            <h3>John Marley</h3>
+                            <p>Jack Woltz</p>
+                        </li>
+                        <li>
+                            <a href="richard_conte.html"><img src="img/casting/richard_conte.png" alt="richard Conte"></a>
+                            <h3>Richard Conte</h3>
+                            <p>Barzini</p>
+                        </li>
+                        <li>
+                            <a href="al_lettieri.html"><img src="img/casting/Al_Lettieri.png" alt="al Lettieri"></a>
+                            <h3>Al Lettieri</h3>
+                            <p>Sollozzo</p>
+                        </li>
+                        <li>
+                            <a href="diane_keaton.html"><img src="img/casting/diane_keaton.png" alt="diane Keaton"></a>
+                            <h3>Diane Keaton</h3>
+                            <p>Kay Adams</p>
+                        </li>
+                    </ul>
 
-					<h2 class="SE_section_title">Écrivains</h2>
-					<ul class="SE_main_casting_photo SE_photo_center">
+                </section>
 
-						<li>
-							<a href="mario_puzo.html"><img src="img/casting/Mario Puzo.png"
-										       alt="Mario Puzo"></a>
-							<h3>Mario Puzo</h3>
-						</li>
-						<li>
-							<a href="ford_coppola.html"><img src="img/casting/ford cappola.png"
-											 alt="Francis Ford Coppola"></a>
-							<h3>Francis Ford Coppola</h3>
-						</li>
-					</ul>
+                <section class="SE_main_casting SE_section_padding">
 
-					<h2 class="SE_section_title" id="SE_principal_actors">Casting de Le Parrain</h2>
-					<ul class="SE_main_casting_photo">
-						<li>
-							<a href="malron_brando.html"><img src="img/casting/marlon_brando.png"
-											  alt="marlon brando"></a>
-							<h3>Marlon Brando</h3>
-							<p>Don Vito Corleone</p>
-						</li>
-						<li>
-							<a href="al_pacino.html"><img src="img/casting/al_pacino.png"
-										      alt="al pacino"></a>
-							<h3>Al Pacino</h3>
-							<p>Michael Corleone</p>
-						</li>
-						<li>
-							<a href="james_caan.html"><img src="img/casting/james_caan.png"
-										       alt="james caan"></a>
-							<h3>James Caan</h3>
-							<p>Sonny Corleone</p>
-						</li>
-						<li>
-							<a href="richard_castellano.html"><img
-							   src="img/casting/Richard_S_Castellano.png"
-							   alt="Richard S Castellano"></a>
-							<h3>Richard S. Castellano</h3>
-							<p>Clemenza</p>
-						</li>
-						<li>
-							<a href="robert_duvall.html"><img src="img/casting/robert_duvall.png"
-											  alt="robert duvall"></a>
-							<h3>Robert Duvall</h3>
-							<p>Tom Hagen</p>
-						</li>
-						<li>
-							<a href="sterling_hayden.html"><img
-							   src="img/casting/sterling_hayden.png"
-							   alt="sterling hayden"></a>
-							<h3>Sterling Hayden</h3>
-							<p>Capitaine McCluskey</p>
-						</li>
-						<li>
-							<a href="john_marley.html"><img src="img/casting/john_marley.png"
-											alt="john Marley"></a>
-							<h3>John Marley</h3>
-							<p>Jack Woltz</p>
-						</li>
-						<li>
-							<a href="richard_conte.html"><img src="img/casting/richard_conte.png"
-											  alt="richard Conte"></a>
-							<h3>Richard Conte</h3>
-							<p>Barzini</p>
-						</li>
-						<li>
-							<a href="al_lettieri.html"><img src="img/casting/Al_Lettieri.png"
-											alt="al Lettieri"></a>
-							<h3>Al Lettieri</h3>
-							<p>Sollozzo</p>
-						</li>
-						<li>
-							<a href="diane_keaton.html"><img src="img/casting/diane_keaton.png"
-											 alt="diane Keaton"></a>
-							<h3>Diane Keaton</h3>
-							<p>Kay Adams</p>
-						</li>
-					</ul>
+                    <h2 class="SE_section_title" id="SE_other_actors">Acteurs Secondaires</h2>
+                    <ul class="SE_main_casting_photo">
 
-				</section>
-				<section class="SE_main_casting SE_section_padding">
+                        <li>
+                            <img src="img/other actors/talia-shires.png" alt="Talia Shire">
+                            <h3>Talia Shire</h3>
+                            <p>Connie Corleone Rizzi </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Abe Vigoda.png" alt="Abe Vigoda">
+                            <h3>Abe Vigoda</h3>
+                            <p>Sal Tessio </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/John_Cazale.png" alt="John Cazale">
+                            <h3>John Cazale</h3>
+                            <p>Fredo Corleone</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Nick Vallelonga.png" alt="FNick Vallelonga">
+                            <h3>Nick Vallelonga</h3>
+                            <p>Invité à la fête de mariage</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Rudy Bond.png" alt="Rudy Bond">
+                            <h3>Rudy Bond</h3>
+                            <p>Cuneo</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Morgana King.png" alt="Morgana King">
+                            <h3>Morgana King</h3>
+                            <p>Mama Corleone </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Lenny Montana.png" alt="Lenny Montana">
+                            <h3>Lenny Montana</h3>
+                            <p>Luca Brasi</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Salvatore Corsitto.png"
+                                 alt="Salvatore Corsitto">
+                            <h3>Salvatore Corsitto</h3>
+                            <p>Paulie Gatto</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Italia Coppola.png" alt="Italia Coppola">
+                            <h3>Italia Coppola</h3>
+                            <p>Extra dans la scène de mariage</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Vito Scotti.png" alt="Vito Scotti">
+                            <h3>Vito Scotti</h3>
+                            <p>Nazorine</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Tony Giorgio.png" alt="Tony Giorgio">
+                            <h3>Tony Giorgio</h3>
+                            <p>Bruno Tattaglia</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Tere Livrano.png" alt="Tere Livrano">
+                            <h3>Tere Livrano</h3>
+                            <p>Theresa Hagen </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Victor Rendina.png" alt="Victor Rendina">
+                            <h3>Victor Rendina</h3>
+                            <p>Philip Tattaglia</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Jeannie Linero.png" alt="Jeannie Linero">
+                            <h3>Jeannie Linero</h3>
+                            <p>Lucy Mancini</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Julie Gregg.png" alt="Julie Gregg">
+                            <h3>Julie Gregg</h3>
+                            <p>Sandra Corleone </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Ardell Sheridan1.png" alt="Ardell Sheridan">
+                            <h3>Ardell Sheridan</h3>
+                            <p>Mrs. Clemenza</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Simonetta Stefanelliy.png"
+                                 alt="Simonetta Stefanelliy">
+                            <h3>Simonetta Stefanelliy</h3>
+                            <p>Apollonia - Sicilian Sequence </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Angelo Infanti.png" alt="Angelo Infanti">
+                            <h3>Angelo Infanti</h3>
+                            <p>Fabrizio - Sicilian Sequence</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Corrado Gaipa.png" alt="Corrado Gaipa">
+                            <h3>Corrado Gaipa</h3>
+                            <p>Don Tommasino - Sicilian Sequence</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Franco Citti.png" alt="Franco Citti">
+                            <h3>Franco Citti</h3>
+                            <p>Calo - Sicilian Sequence</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Saro Urzì.png" alt="Saro Urzì">
+                            <h3>Saro Urzì</h3>
+                            <p>Vitelli - Sicilian Sequence</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Sofia Coppola.png" alt="Sofia Coppola">
+                            <h3>Sofia Coppola</h3>
+                            <p>Michael Francis Rizzi</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Don Costello.png" alt="Don Costello">
+                            <h3>Don Costello</h3>
+                            <p>Don Victor Stracci</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Louis Guss.png" alt="Louis Guss">
+                            <h3>Louis Guss</h3>
+                            <p>Don Zaluchi </p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Rudy Bond.png" alt="Randy Jurgensen">
+                            <h3>Randy Jurgensen</h3>
+                            <p>Le tueur de Sonny #1</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Joe Spinell.png" alt="Joe Spinell">
+                            <h3>Joe Spinell</h3>
+                            <p>Willi Cicci</p>
+                        </li>
+                        <li>
+                            <img src="img/other actors/Gabriele Torrei.png" alt="Gabriele Torrei">
+                            <h3>Gabriele Torrei</h3>
+                            <p>Enzo the Baker</p>
+                        </li>
+                    </ul>
 
-					<h2 class="SE_section_title" id="SE_other_actors">Acteurs Secondaires</h2>
-					<ul class="SE_main_casting_photo">
+                </section>
 
-						<li>
-							<img src="img/other actors/talia-shires.png" alt="Talia Shire">
-							<h3>Talia Shire</h3>
-							<p>Connie Corleone Rizzi </p>
-						</li>
-						<li>
-							<img src="img/other actors/Abe Vigoda.png" alt="Abe Vigoda">
-							<h3>Abe Vigoda</h3>
-							<p>Sal Tessio </p>
-						</li>
-						<li>
-							<img src="img/other actors/John_Cazale.png" alt="John Cazale">
-							<h3>John Cazale</h3>
-							<p>Fredo Corleone</p>
-						</li>
-						<li>
-							<img src="img/other actors/Nick Vallelonga.png" alt="FNick Vallelonga">
-							<h3>Nick Vallelonga</h3>
-							<p>Invité à la fête de mariage</p>
-						</li>
-						<li>
-							<img src="img/other actors/Rudy Bond.png" alt="Rudy Bond">
-							<h3>Rudy Bond</h3>
-							<p>Cuneo</p>
-						</li>
-						<li>
-							<img src="img/other actors/Morgana King.png" alt="Morgana King">
-							<h3>Morgana King</h3>
-							<p>Mama Corleone </p>
-						</li>
-						<li>
-							<img src="img/other actors/Lenny Montana.png" alt="Lenny Montana">
-							<h3>Lenny Montana</h3>
-							<p>Luca Brasi</p>
-						</li>
-						<li>
-							<img src="img/other actors/Salvatore Corsitto.png"
-							     alt="Salvatore Corsitto">
-							<h3>Salvatore Corsitto</h3>
-							<p>Paulie Gatto</p>
-						</li>
-						<li>
-							<img src="img/other actors/Italia Coppola.png" alt="Italia Coppola">
-							<h3>Italia Coppola</h3>
-							<p>Extra dans la scène de mariage</p>
-						</li>
-						<li>
-							<img src="img/other actors/Vito Scotti.png" alt="Vito Scotti">
-							<h3>Vito Scotti</h3>
-							<p>Nazorine</p>
-						</li>
-						<li>
-							<img src="img/other actors/Tony Giorgio.png" alt="Tony Giorgio">
-							<h3>Tony Giorgio</h3>
-							<p>Bruno Tattaglia</p>
-						</li>
-						<li>
-							<img src="img/other actors/Tere Livrano.png" alt="Tere Livrano">
-							<h3>Tere Livrano</h3>
-							<p>Theresa Hagen </p>
-						</li>
-						<li>
-							<img src="img/other actors/Victor Rendina.png" alt="Victor Rendina">
-							<h3>Victor Rendina</h3>
-							<p>Philip Tattaglia</p>
-						</li>
-						<li>
-							<img src="img/other actors/Jeannie Linero.png" alt="Jeannie Linero">
-							<h3>Jeannie Linero</h3>
-							<p>Lucy Mancini</p>
-						</li>
-						<li>
-							<img src="img/other actors/Julie Gregg.png" alt="Julie Gregg">
-							<h3>Julie Gregg</h3>
-							<p>Sandra Corleone </p>
-						</li>
-						<li>
-							<img src="img/other actors/Ardell Sheridan1.png" alt="Ardell Sheridan">
-							<h3>Ardell Sheridan</h3>
-							<p>Mrs. Clemenza</p>
-						</li>
-						<li>
-							<img src="img/other actors/Simonetta Stefanelliy.png"
-							     alt="Simonetta Stefanelliy">
-							<h3>Simonetta Stefanelliy</h3>
-							<p>Apollonia - Sicilian Sequence </p>
-						</li>
-						<li>
-							<img src="img/other actors/Angelo Infanti.png" alt="Angelo Infanti">
-							<h3>Angelo Infanti</h3>
-							<p>Fabrizio - Sicilian Sequence</p>
-						</li>
-						<li>
-							<img src="img/other actors/Corrado Gaipa.png" alt="Corrado Gaipa">
-							<h3>Corrado Gaipa</h3>
-							<p>Don Tommasino - Sicilian Sequence</p>
-						</li>
-						<li>
-							<img src="img/other actors/Franco Citti.png" alt="Franco Citti">
-							<h3>Franco Citti</h3>
-							<p>Calo - Sicilian Sequence</p>
-						</li>
-						<li>
-							<img src="img/other actors/Saro Urzì.png" alt="Saro Urzì">
-							<h3>Saro Urzì</h3>
-							<p>Vitelli - Sicilian Sequence</p>
-						</li>
-						<li>
-							<img src="img/other actors/Sofia Coppola.png" alt="Sofia Coppola">
-							<h3>Sofia Coppola</h3>
-							<p>Michael Francis Rizzi</p>
-						</li>
-						<li>
-							<img src="img/other actors/Don Costello.png" alt="Don Costello">
-							<h3>Don Costello</h3>
-							<p>Don Victor Stracci</p>
-						</li>
-						<li>
-							<img src="img/other actors/Louis Guss.png" alt="Louis Guss">
-							<h3>Louis Guss</h3>
-							<p>Don Zaluchi </p>
-						</li>
-						<li>
-							<img src="img/other actors/Rudy Bond.png" alt="Randy Jurgensen">
-							<h3>Randy Jurgensen</h3>
-							<p>Le tueur de Sonny #1</p>
-						</li>
-						<li>
-							<img src="img/other actors/Joe Spinell.png" alt="Joe Spinell">
-							<h3>Joe Spinell</h3>
-							<p>Willi Cicci</p>
-						</li>
-						<li>
-							<img src="img/other actors/Gabriele Torrei.png" alt="Gabriele Torrei">
-							<h3>Gabriele Torrei</h3>
-							<p>Enzo the Baker</p>
-						</li>
-					</ul>
+            </div>
+        </main>
 
-				</section>
+        <footer>
+            <section id="SE_footer_contact">
+                <div id="SE_search_box">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" placeholder="Cherche" required>
+                        <input type="submit" class="SE_footer_button">
+                    </form>
+                </div>
 
-			</div>
-		</main>
+                <div>
+                    <p>&copy; 2023 Box Office Successes</p>
+                </div>
 
-		<footer>
-			<section id="SE_footer_contact">
-				<div id="SE_search_box">
-					<form action="https://www.google.com/search" method="GET">
-						<input type="text" placeholder="Cherche" required>
-						<input type="submit" class="SE_footer_button">
-					</form>
-				</div>
+                <div>
+                    <a href="https://www.facebook.com/votre_page_facebook" target="_blank">
+                        <img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
+                        <img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
+                        <img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
+                    </a>
+                </div>
+            </section>
+        </footer>
 
-				<div>
-					<p>&copy; 2023 Box Office Successes</p>
-				</div>
-
-				<div class="">
-					<a href="https://www.facebook.com/votre_page_facebook" target="_blank">
-						<img src="img/icon_facebook.png" alt="Facebook" class="SE_social-logo">
-					</a>
-					<a href="https://www.instagram.com/votre_compte_instagram" target="_blank">
-						<img src="img/icon_insta.png" alt="Instagram" class="SE_social-logo">
-					</a>
-					<a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-						<img src="img/icon_twitter.png" alt="twitter" class="SE_social-logo">
-					</a>
-					<a href="https://www.linkedin.com/votre_page_linkedin" target="_blank">
-						<img src="img/icon_youtube.png" alt="youtube" class="SE_social-logo">
-					</a>
-				</div>
-			</section>
-		</footer>
-	</body>
+    </body>
 
 </html>
